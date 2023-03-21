@@ -35,30 +35,25 @@
             this.DriversPnl = new System.Windows.Forms.Panel();
             this.DriversLblPicBx = new System.Windows.Forms.Label();
             this.DriversPicBx = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.CustomerLbl = new System.Windows.Forms.Label();
+            this.CustomerPicBx = new System.Windows.Forms.PictureBox();
+            this.VehiclesLbl = new System.Windows.Forms.Label();
+            this.VehiclePicBx = new System.Windows.Forms.PictureBox();
+            this.BookingLbl = new System.Windows.Forms.Label();
+            this.BookingPicBx = new System.Windows.Forms.PictureBox();
+            this.UsersLbl = new System.Windows.Forms.Label();
+            this.UserPicBx = new System.Windows.Forms.PictureBox();
+            this.DashboardLbl = new System.Windows.Forms.Label();
+            this.DashboardPicBx = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBx)).BeginInit();
             this.LogoPnl.SuspendLayout();
             this.DriversPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DriversPicBx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerPicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VehiclePicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BookingPicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserPicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DashboardPicBx)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -118,139 +113,126 @@
             this.DriversPicBx.TabIndex = 0;
             this.DriversPicBx.TabStop = false;
             // 
-            // label1
+            // CustomerLbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(7, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Drivers";
+            this.CustomerLbl.AutoSize = true;
+            this.CustomerLbl.Font = new System.Drawing.Font("Georgia Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerLbl.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.CustomerLbl.Location = new System.Drawing.Point(18, 264);
+            this.CustomerLbl.Name = "CustomerLbl";
+            this.CustomerLbl.Size = new System.Drawing.Size(87, 18);
+            this.CustomerLbl.TabIndex = 1;
+            this.CustomerLbl.Text = "Customer";
             // 
-            // pictureBox1
+            // CustomerPicBx
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(14, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(51, 50);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.CustomerPicBx.Image = ((System.Drawing.Image)(resources.GetObject("CustomerPicBx.Image")));
+            this.CustomerPicBx.Location = new System.Drawing.Point(35, 211);
+            this.CustomerPicBx.Name = "CustomerPicBx";
+            this.CustomerPicBx.Size = new System.Drawing.Size(51, 50);
+            this.CustomerPicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CustomerPicBx.TabIndex = 0;
+            this.CustomerPicBx.TabStop = false;
             // 
-            // panel2
+            // VehiclesLbl
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(21, 235);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(79, 84);
-            this.panel2.TabIndex = 2;
+            this.VehiclesLbl.AutoSize = true;
+            this.VehiclesLbl.Font = new System.Drawing.Font("Georgia Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VehiclesLbl.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.VehiclesLbl.Location = new System.Drawing.Point(28, 363);
+            this.VehiclesLbl.Name = "VehiclesLbl";
+            this.VehiclesLbl.Size = new System.Drawing.Size(76, 18);
+            this.VehiclesLbl.TabIndex = 4;
+            this.VehiclesLbl.Text = "Vehicles";
             // 
-            // label2
+            // VehiclePicBx
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Georgia Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(7, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Drivers";
+            this.VehiclePicBx.Image = ((System.Drawing.Image)(resources.GetObject("VehiclePicBx.Image")));
+            this.VehiclePicBx.Location = new System.Drawing.Point(35, 310);
+            this.VehiclePicBx.Name = "VehiclePicBx";
+            this.VehiclePicBx.Size = new System.Drawing.Size(51, 50);
+            this.VehiclePicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.VehiclePicBx.TabIndex = 3;
+            this.VehiclePicBx.TabStop = false;
             // 
-            // pictureBox2
+            // BookingLbl
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(14, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(51, 50);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.BookingLbl.AutoSize = true;
+            this.BookingLbl.Font = new System.Drawing.Font("Georgia Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BookingLbl.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.BookingLbl.Location = new System.Drawing.Point(24, 471);
+            this.BookingLbl.Name = "BookingLbl";
+            this.BookingLbl.Size = new System.Drawing.Size(76, 18);
+            this.BookingLbl.TabIndex = 6;
+            this.BookingLbl.Text = "Booking";
             // 
-            // panel3
+            // BookingPicBx
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.ForeColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(21, 371);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(79, 84);
-            this.panel3.TabIndex = 2;
+            this.BookingPicBx.Image = ((System.Drawing.Image)(resources.GetObject("BookingPicBx.Image")));
+            this.BookingPicBx.Location = new System.Drawing.Point(35, 418);
+            this.BookingPicBx.Name = "BookingPicBx";
+            this.BookingPicBx.Size = new System.Drawing.Size(51, 50);
+            this.BookingPicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BookingPicBx.TabIndex = 5;
+            this.BookingPicBx.TabStop = false;
             // 
-            // label3
+            // UsersLbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Georgia Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Lime;
-            this.label3.Location = new System.Drawing.Point(7, 56);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 18);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Drivers";
+            this.UsersLbl.AutoSize = true;
+            this.UsersLbl.Font = new System.Drawing.Font("Georgia Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsersLbl.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.UsersLbl.Location = new System.Drawing.Point(32, 678);
+            this.UsersLbl.Name = "UsersLbl";
+            this.UsersLbl.Size = new System.Drawing.Size(54, 18);
+            this.UsersLbl.TabIndex = 8;
+            this.UsersLbl.Text = "Users";
             // 
-            // pictureBox3
+            // UserPicBx
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(14, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(51, 50);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.UserPicBx.Image = ((System.Drawing.Image)(resources.GetObject("UserPicBx.Image")));
+            this.UserPicBx.Location = new System.Drawing.Point(35, 625);
+            this.UserPicBx.Name = "UserPicBx";
+            this.UserPicBx.Size = new System.Drawing.Size(51, 50);
+            this.UserPicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.UserPicBx.TabIndex = 7;
+            this.UserPicBx.TabStop = false;
             // 
-            // panel4
+            // DashboardLbl
             // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.ForeColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(21, 511);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(79, 84);
-            this.panel4.TabIndex = 2;
+            this.DashboardLbl.AutoSize = true;
+            this.DashboardLbl.Font = new System.Drawing.Font("Georgia Pro", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashboardLbl.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.DashboardLbl.Location = new System.Drawing.Point(8, 570);
+            this.DashboardLbl.Name = "DashboardLbl";
+            this.DashboardLbl.Size = new System.Drawing.Size(96, 18);
+            this.DashboardLbl.TabIndex = 10;
+            this.DashboardLbl.Text = "DashBoard";
             // 
-            // label4
+            // DashboardPicBx
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Georgia Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Lime;
-            this.label4.Location = new System.Drawing.Point(7, 56);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 18);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Drivers";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(14, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(51, 50);
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.ForeColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(21, 653);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(79, 84);
-            this.panel5.TabIndex = 2;
+            this.DashboardPicBx.Image = ((System.Drawing.Image)(resources.GetObject("DashboardPicBx.Image")));
+            this.DashboardPicBx.Location = new System.Drawing.Point(35, 517);
+            this.DashboardPicBx.Name = "DashboardPicBx";
+            this.DashboardPicBx.Size = new System.Drawing.Size(51, 50);
+            this.DashboardPicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.DashboardPicBx.TabIndex = 9;
+            this.DashboardPicBx.TabStop = false;
             // 
             // Drivers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1407, 931);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.DashboardLbl);
+            this.Controls.Add(this.DashboardPicBx);
+            this.Controls.Add(this.UsersLbl);
+            this.Controls.Add(this.UserPicBx);
+            this.Controls.Add(this.BookingLbl);
+            this.Controls.Add(this.BookingPicBx);
+            this.Controls.Add(this.VehiclesLbl);
+            this.Controls.Add(this.VehiclePicBx);
+            this.Controls.Add(this.CustomerLbl);
+            this.Controls.Add(this.CustomerPicBx);
             this.Controls.Add(this.DriversPnl);
             this.Controls.Add(this.LogoPnl);
             this.Controls.Add(this.panel1);
@@ -263,19 +245,13 @@
             this.DriversPnl.ResumeLayout(false);
             this.DriversPnl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DriversPicBx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerPicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VehiclePicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BookingPicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserPicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DashboardPicBx)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -287,18 +263,16 @@
         private System.Windows.Forms.Panel DriversPnl;
         private System.Windows.Forms.Label DriversLblPicBx;
         private System.Windows.Forms.PictureBox DriversPicBx;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label CustomerLbl;
+        private System.Windows.Forms.PictureBox CustomerPicBx;
+        private System.Windows.Forms.Label VehiclesLbl;
+        private System.Windows.Forms.PictureBox VehiclePicBx;
+        private System.Windows.Forms.Label BookingLbl;
+        private System.Windows.Forms.PictureBox BookingPicBx;
+        private System.Windows.Forms.Label UsersLbl;
+        private System.Windows.Forms.PictureBox UserPicBx;
+        private System.Windows.Forms.Label DashboardLbl;
+        private System.Windows.Forms.PictureBox DashboardPicBx;
     }
 }
 
