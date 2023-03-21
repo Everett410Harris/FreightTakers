@@ -45,6 +45,26 @@
             this.UserPicBx = new System.Windows.Forms.PictureBox();
             this.DashboardLbl = new System.Windows.Forms.Label();
             this.DashboardPicBx = new System.Windows.Forms.PictureBox();
+            this.ExitPicBx = new System.Windows.Forms.PictureBox();
+            this.ExitLbl = new System.Windows.Forms.Label();
+            this.ManageDriversLbl = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DriverFirstNameLbl = new System.Windows.Forms.Label();
+            this.DriverLastNameLbl = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.DriverDOBdatePicker = new System.Windows.Forms.DateTimePicker();
+            this.DriverDOBLbl = new System.Windows.Forms.Label();
+            this.DriverJoinDateLbl = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DriverAddressTxBx = new System.Windows.Forms.TextBox();
+            this.DriverAddressLbl = new System.Windows.Forms.Label();
+            this.DriverGenderTxBx = new System.Windows.Forms.ComboBox();
+            this.SaveBtn = new System.Windows.Forms.Button();
+            this.EditBtn = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.DriverDGV = new System.Windows.Forms.DataGridView();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBx)).BeginInit();
             this.LogoPnl.SuspendLayout();
             this.DriversPnl.SuspendLayout();
@@ -54,11 +74,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.BookingPicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserPicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DashboardPicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitPicBx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DriverDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.DriverDGV);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.EditBtn);
+            this.panel1.Controls.Add(this.SaveBtn);
+            this.panel1.Controls.Add(this.DriverGenderTxBx);
+            this.panel1.Controls.Add(this.DriverAddressLbl);
+            this.panel1.Controls.Add(this.DriverAddressTxBx);
+            this.panel1.Controls.Add(this.DriverJoinDateLbl);
+            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.DriverDOBLbl);
+            this.panel1.Controls.Add(this.DriverDOBdatePicker);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.DriverLastNameLbl);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.DriverFirstNameLbl);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.ManageDriversLbl);
             this.panel1.Location = new System.Drawing.Point(106, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1146, 917);
@@ -218,11 +257,225 @@
             this.DashboardPicBx.TabIndex = 9;
             this.DashboardPicBx.TabStop = false;
             // 
+            // ExitPicBx
+            // 
+            this.ExitPicBx.Image = ((System.Drawing.Image)(resources.GetObject("ExitPicBx.Image")));
+            this.ExitPicBx.Location = new System.Drawing.Point(35, 839);
+            this.ExitPicBx.Name = "ExitPicBx";
+            this.ExitPicBx.Size = new System.Drawing.Size(51, 50);
+            this.ExitPicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ExitPicBx.TabIndex = 11;
+            this.ExitPicBx.TabStop = false;
+            // 
+            // ExitLbl
+            // 
+            this.ExitLbl.AutoSize = true;
+            this.ExitLbl.Font = new System.Drawing.Font("Georgia Pro", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitLbl.ForeColor = System.Drawing.Color.Lime;
+            this.ExitLbl.Location = new System.Drawing.Point(36, 892);
+            this.ExitLbl.Name = "ExitLbl";
+            this.ExitLbl.Size = new System.Drawing.Size(50, 23);
+            this.ExitLbl.TabIndex = 12;
+            this.ExitLbl.Text = "Exit";
+            // 
+            // ManageDriversLbl
+            // 
+            this.ManageDriversLbl.AutoSize = true;
+            this.ManageDriversLbl.Font = new System.Drawing.Font("High Tower Text", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ManageDriversLbl.ForeColor = System.Drawing.Color.Blue;
+            this.ManageDriversLbl.Location = new System.Drawing.Point(418, 29);
+            this.ManageDriversLbl.Name = "ManageDriversLbl";
+            this.ManageDriversLbl.Size = new System.Drawing.Size(277, 44);
+            this.ManageDriversLbl.TabIndex = 13;
+            this.ManageDriversLbl.Text = "Manage Drivers";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(45, 125);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(235, 30);
+            this.textBox1.TabIndex = 14;
+            // 
+            // DriverFirstNameLbl
+            // 
+            this.DriverFirstNameLbl.AutoSize = true;
+            this.DriverFirstNameLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DriverFirstNameLbl.ForeColor = System.Drawing.Color.Blue;
+            this.DriverFirstNameLbl.Location = new System.Drawing.Point(42, 95);
+            this.DriverFirstNameLbl.Name = "DriverFirstNameLbl";
+            this.DriverFirstNameLbl.Size = new System.Drawing.Size(208, 25);
+            this.DriverFirstNameLbl.TabIndex = 13;
+            this.DriverFirstNameLbl.Text = "Driver First Name";
+            // 
+            // DriverLastNameLbl
+            // 
+            this.DriverLastNameLbl.AutoSize = true;
+            this.DriverLastNameLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DriverLastNameLbl.ForeColor = System.Drawing.Color.Blue;
+            this.DriverLastNameLbl.Location = new System.Drawing.Point(317, 95);
+            this.DriverLastNameLbl.Name = "DriverLastNameLbl";
+            this.DriverLastNameLbl.Size = new System.Drawing.Size(203, 25);
+            this.DriverLastNameLbl.TabIndex = 15;
+            this.DriverLastNameLbl.Text = "Driver Last Name";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(320, 125);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(235, 30);
+            this.textBox2.TabIndex = 16;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.ForeColor = System.Drawing.Color.Blue;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(598, 124);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(204, 33);
+            this.comboBox1.TabIndex = 17;
+            this.comboBox1.Text = "Driver Name";
+            // 
+            // DriverDOBdatePicker
+            // 
+            this.DriverDOBdatePicker.CalendarForeColor = System.Drawing.Color.Blue;
+            this.DriverDOBdatePicker.CalendarTitleBackColor = System.Drawing.Color.Blue;
+            this.DriverDOBdatePicker.CalendarTitleForeColor = System.Drawing.Color.Blue;
+            this.DriverDOBdatePicker.CalendarTrailingForeColor = System.Drawing.Color.Blue;
+            this.DriverDOBdatePicker.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DriverDOBdatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DriverDOBdatePicker.Location = new System.Drawing.Point(45, 216);
+            this.DriverDOBdatePicker.Name = "DriverDOBdatePicker";
+            this.DriverDOBdatePicker.Size = new System.Drawing.Size(217, 26);
+            this.DriverDOBdatePicker.TabIndex = 18;
+            // 
+            // DriverDOBLbl
+            // 
+            this.DriverDOBLbl.AutoSize = true;
+            this.DriverDOBLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DriverDOBLbl.ForeColor = System.Drawing.Color.Blue;
+            this.DriverDOBLbl.Location = new System.Drawing.Point(42, 182);
+            this.DriverDOBLbl.Name = "DriverDOBLbl";
+            this.DriverDOBLbl.Size = new System.Drawing.Size(139, 25);
+            this.DriverDOBLbl.TabIndex = 19;
+            this.DriverDOBLbl.Text = "Driver DOB";
+            // 
+            // DriverJoinDateLbl
+            // 
+            this.DriverJoinDateLbl.AutoSize = true;
+            this.DriverJoinDateLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DriverJoinDateLbl.ForeColor = System.Drawing.Color.Blue;
+            this.DriverJoinDateLbl.Location = new System.Drawing.Point(317, 182);
+            this.DriverJoinDateLbl.Name = "DriverJoinDateLbl";
+            this.DriverJoinDateLbl.Size = new System.Drawing.Size(192, 25);
+            this.DriverJoinDateLbl.TabIndex = 21;
+            this.DriverJoinDateLbl.Text = "Driver Join Date";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.Blue;
+            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.Blue;
+            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.Blue;
+            this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.Blue;
+            this.dateTimePicker1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(320, 216);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(219, 26);
+            this.dateTimePicker1.TabIndex = 20;
+            // 
+            // DriverAddressTxBx
+            // 
+            this.DriverAddressTxBx.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DriverAddressTxBx.ForeColor = System.Drawing.Color.Blue;
+            this.DriverAddressTxBx.Location = new System.Drawing.Point(849, 125);
+            this.DriverAddressTxBx.Multiline = true;
+            this.DriverAddressTxBx.Name = "DriverAddressTxBx";
+            this.DriverAddressTxBx.Size = new System.Drawing.Size(235, 117);
+            this.DriverAddressTxBx.TabIndex = 22;
+            // 
+            // DriverAddressLbl
+            // 
+            this.DriverAddressLbl.AutoSize = true;
+            this.DriverAddressLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DriverAddressLbl.ForeColor = System.Drawing.Color.Blue;
+            this.DriverAddressLbl.Location = new System.Drawing.Point(844, 95);
+            this.DriverAddressLbl.Name = "DriverAddressLbl";
+            this.DriverAddressLbl.Size = new System.Drawing.Size(177, 25);
+            this.DriverAddressLbl.TabIndex = 23;
+            this.DriverAddressLbl.Text = "Driver Address";
+            // 
+            // DriverGenderTxBx
+            // 
+            this.DriverGenderTxBx.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DriverGenderTxBx.ForeColor = System.Drawing.Color.Blue;
+            this.DriverGenderTxBx.FormattingEnabled = true;
+            this.DriverGenderTxBx.Items.AddRange(new object[] {
+            "Female",
+            "Male",
+            "Transsexual(female)",
+            "Transsexual(male)",
+            "Other"});
+            this.DriverGenderTxBx.Location = new System.Drawing.Point(598, 209);
+            this.DriverGenderTxBx.Name = "DriverGenderTxBx";
+            this.DriverGenderTxBx.Size = new System.Drawing.Size(204, 33);
+            this.DriverGenderTxBx.TabIndex = 24;
+            this.DriverGenderTxBx.Text = "Driver Gender";
+            // 
+            // SaveBtn
+            // 
+            this.SaveBtn.BackColor = System.Drawing.Color.Gold;
+            this.SaveBtn.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveBtn.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.SaveBtn.Location = new System.Drawing.Point(225, 272);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(134, 58);
+            this.SaveBtn.TabIndex = 25;
+            this.SaveBtn.Text = "SAVE";
+            this.SaveBtn.UseVisualStyleBackColor = false;
+            // 
+            // EditBtn
+            // 
+            this.EditBtn.BackColor = System.Drawing.Color.DarkRed;
+            this.EditBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditBtn.ForeColor = System.Drawing.Color.Violet;
+            this.EditBtn.Location = new System.Drawing.Point(490, 272);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.Size = new System.Drawing.Size(134, 58);
+            this.EditBtn.TabIndex = 26;
+            this.EditBtn.Text = "EDIT";
+            this.EditBtn.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.button3.ForeColor = System.Drawing.Color.Cyan;
+            this.button3.Location = new System.Drawing.Point(753, 272);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(134, 58);
+            this.button3.TabIndex = 27;
+            this.button3.Text = "DELETE";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // DriverDGV
+            // 
+            this.DriverDGV.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.DriverDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DriverDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DriverDGV.Location = new System.Drawing.Point(4, 361);
+            this.DriverDGV.Name = "DriverDGV";
+            this.DriverDGV.Size = new System.Drawing.Size(1139, 552);
+            this.DriverDGV.TabIndex = 28;
+            // 
             // Drivers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1407, 931);
+            this.Controls.Add(this.ExitLbl);
+            this.Controls.Add(this.ExitPicBx);
             this.Controls.Add(this.DashboardLbl);
             this.Controls.Add(this.DashboardPicBx);
             this.Controls.Add(this.UsersLbl);
@@ -240,6 +493,8 @@
             this.Name = "Drivers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Drivers";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBx)).EndInit();
             this.LogoPnl.ResumeLayout(false);
             this.DriversPnl.ResumeLayout(false);
@@ -250,6 +505,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.BookingPicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserPicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DashboardPicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitPicBx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DriverDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -273,6 +530,25 @@
         private System.Windows.Forms.PictureBox UserPicBx;
         private System.Windows.Forms.Label DashboardLbl;
         private System.Windows.Forms.PictureBox DashboardPicBx;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button EditBtn;
+        private System.Windows.Forms.Button SaveBtn;
+        private System.Windows.Forms.ComboBox DriverGenderTxBx;
+        private System.Windows.Forms.Label DriverAddressLbl;
+        private System.Windows.Forms.TextBox DriverAddressTxBx;
+        private System.Windows.Forms.Label DriverJoinDateLbl;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label DriverDOBLbl;
+        private System.Windows.Forms.DateTimePicker DriverDOBdatePicker;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label DriverLastNameLbl;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label DriverFirstNameLbl;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label ManageDriversLbl;
+        private System.Windows.Forms.PictureBox ExitPicBx;
+        private System.Windows.Forms.Label ExitLbl;
+        private System.Windows.Forms.DataGridView DriverDGV;
     }
 }
 
