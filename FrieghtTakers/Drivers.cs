@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FrieghtTakers
 {
-    public partial class Form1 : Form
+    public partial class Drivers : Form
     {
-        public Form1()
+        public Drivers()
         {
             InitializeComponent();
         }
