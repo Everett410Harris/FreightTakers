@@ -64,6 +64,7 @@
             this.EditBtn = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.DriverDGV = new System.Windows.Forms.DataGridView();
+            this.RightCrnrExitPicBx = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBx)).BeginInit();
             this.LogoPnl.SuspendLayout();
@@ -76,6 +77,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.DashboardPicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExitPicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DriverDGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightCrnrExitPicBx)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -469,11 +471,22 @@
             this.DriverDGV.Size = new System.Drawing.Size(1139, 552);
             this.DriverDGV.TabIndex = 28;
             // 
+            // RightCrnrExitPicBx
+            // 
+            this.RightCrnrExitPicBx.Image = ((System.Drawing.Image)(resources.GetObject("RightCrnrExitPicBx.Image")));
+            this.RightCrnrExitPicBx.Location = new System.Drawing.Point(1344, 9);
+            this.RightCrnrExitPicBx.Name = "RightCrnrExitPicBx";
+            this.RightCrnrExitPicBx.Size = new System.Drawing.Size(51, 50);
+            this.RightCrnrExitPicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.RightCrnrExitPicBx.TabIndex = 13;
+            this.RightCrnrExitPicBx.TabStop = false;
+            // 
             // Drivers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1407, 931);
+            this.Controls.Add(this.RightCrnrExitPicBx);
             this.Controls.Add(this.ExitLbl);
             this.Controls.Add(this.ExitPicBx);
             this.Controls.Add(this.DashboardLbl);
@@ -507,6 +520,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.DashboardPicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExitPicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DriverDGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightCrnrExitPicBx)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -549,6 +563,7 @@
         private System.Windows.Forms.PictureBox ExitPicBx;
         private System.Windows.Forms.Label ExitLbl;
         private System.Windows.Forms.DataGridView DriverDGV;
+        private System.Windows.Forms.PictureBox RightCrnrExitPicBx;
     }
 }
 
