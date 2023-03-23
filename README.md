@@ -9,4 +9,4 @@ This is a C# .NET app and I am using SQL for the database.FreightTakers is a tra
 - [ ] Ensure DGV is loading correctly
 - [ ] Connect pages
 - [ ] Unit Testing class
-- [ ]Check requirements to ensure project is properly equipped.
+- [ ] Check requirements to ensure project is properly equipped.
