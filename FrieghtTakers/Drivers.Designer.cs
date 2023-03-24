@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Drivers));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.DriversPanel = new System.Windows.Forms.Panel();
             this.DriverPhoneLbl = new System.Windows.Forms.Label();
             this.DriverPhoneTb = new System.Windows.Forms.TextBox();
             this.DriverDGV = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
+            this.DeleteBtn = new System.Windows.Forms.Button();
             this.EditBtn = new System.Windows.Forms.Button();
             this.SaveBtn = new System.Windows.Forms.Button();
-            this.DriverGenderTb = new System.Windows.Forms.ComboBox();
+            this.DriverGenderCb = new System.Windows.Forms.ComboBox();
             this.DriverAddressLbl = new System.Windows.Forms.Label();
             this.DriverAddressTxBx = new System.Windows.Forms.TextBox();
             this.DriverJoinDateLbl = new System.Windows.Forms.Label();
@@ -66,7 +66,7 @@
             this.ExitPicBx = new System.Windows.Forms.PictureBox();
             this.ExitLbl = new System.Windows.Forms.Label();
             this.RightCrnrExitPicBx = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.DriversPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DriverDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBx)).BeginInit();
             this.LogoPnl.SuspendLayout();
@@ -81,31 +81,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.RightCrnrExitPicBx)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // DriversPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.DriverPhoneLbl);
-            this.panel1.Controls.Add(this.DriverPhoneTb);
-            this.panel1.Controls.Add(this.DriverDGV);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.EditBtn);
-            this.panel1.Controls.Add(this.SaveBtn);
-            this.panel1.Controls.Add(this.DriverGenderTb);
-            this.panel1.Controls.Add(this.DriverAddressLbl);
-            this.panel1.Controls.Add(this.DriverAddressTxBx);
-            this.panel1.Controls.Add(this.DriverJoinDateLbl);
-            this.panel1.Controls.Add(this.DriverJoinDatePkr);
-            this.panel1.Controls.Add(this.DriverDOBLbl);
-            this.panel1.Controls.Add(this.DriverDOBdatePkr);
-            this.panel1.Controls.Add(this.DriverLastNameLbl);
-            this.panel1.Controls.Add(this.DriverLastNameTb);
-            this.panel1.Controls.Add(this.DriverFirstNameLbl);
-            this.panel1.Controls.Add(this.DriverFirstNameTb);
-            this.panel1.Controls.Add(this.ManageDriversLbl);
-            this.panel1.Location = new System.Drawing.Point(106, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1146, 917);
-            this.panel1.TabIndex = 0;
+            this.DriversPanel.BackColor = System.Drawing.Color.White;
+            this.DriversPanel.Controls.Add(this.DriverPhoneLbl);
+            this.DriversPanel.Controls.Add(this.DriverPhoneTb);
+            this.DriversPanel.Controls.Add(this.DriverDGV);
+            this.DriversPanel.Controls.Add(this.DeleteBtn);
+            this.DriversPanel.Controls.Add(this.EditBtn);
+            this.DriversPanel.Controls.Add(this.SaveBtn);
+            this.DriversPanel.Controls.Add(this.DriverGenderCb);
+            this.DriversPanel.Controls.Add(this.DriverAddressLbl);
+            this.DriversPanel.Controls.Add(this.DriverAddressTxBx);
+            this.DriversPanel.Controls.Add(this.DriverJoinDateLbl);
+            this.DriversPanel.Controls.Add(this.DriverJoinDatePkr);
+            this.DriversPanel.Controls.Add(this.DriverDOBLbl);
+            this.DriversPanel.Controls.Add(this.DriverDOBdatePkr);
+            this.DriversPanel.Controls.Add(this.DriverLastNameLbl);
+            this.DriversPanel.Controls.Add(this.DriverLastNameTb);
+            this.DriversPanel.Controls.Add(this.DriverFirstNameLbl);
+            this.DriversPanel.Controls.Add(this.DriverFirstNameTb);
+            this.DriversPanel.Controls.Add(this.ManageDriversLbl);
+            this.DriversPanel.Location = new System.Drawing.Point(106, 2);
+            this.DriversPanel.Name = "DriversPanel";
+            this.DriversPanel.Size = new System.Drawing.Size(1146, 917);
+            this.DriversPanel.TabIndex = 0;
             // 
             // DriverPhoneLbl
             // 
@@ -136,16 +136,16 @@
             this.DriverDGV.Size = new System.Drawing.Size(1139, 552);
             this.DriverDGV.TabIndex = 28;
             // 
-            // button3
+            // DeleteBtn
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.button3.ForeColor = System.Drawing.Color.Cyan;
-            this.button3.Location = new System.Drawing.Point(753, 272);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(134, 58);
-            this.button3.TabIndex = 27;
-            this.button3.Text = "DELETE";
-            this.button3.UseVisualStyleBackColor = false;
+            this.DeleteBtn.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.DeleteBtn.ForeColor = System.Drawing.Color.Cyan;
+            this.DeleteBtn.Location = new System.Drawing.Point(753, 272);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(134, 58);
+            this.DeleteBtn.TabIndex = 27;
+            this.DeleteBtn.Text = "DELETE";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
             // 
             // EditBtn
             // 
@@ -171,22 +171,22 @@
             this.SaveBtn.Text = "SAVE";
             this.SaveBtn.UseVisualStyleBackColor = false;
             // 
-            // DriverGenderTb
+            // DriverGenderCb
             // 
-            this.DriverGenderTb.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DriverGenderTb.ForeColor = System.Drawing.Color.Blue;
-            this.DriverGenderTb.FormattingEnabled = true;
-            this.DriverGenderTb.Items.AddRange(new object[] {
+            this.DriverGenderCb.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DriverGenderCb.ForeColor = System.Drawing.Color.Blue;
+            this.DriverGenderCb.FormattingEnabled = true;
+            this.DriverGenderCb.Items.AddRange(new object[] {
             "Female",
             "Male",
             "Transsexual(female)",
             "Transsexual(male)",
             "Other"});
-            this.DriverGenderTb.Location = new System.Drawing.Point(598, 209);
-            this.DriverGenderTb.Name = "DriverGenderTb";
-            this.DriverGenderTb.Size = new System.Drawing.Size(204, 33);
-            this.DriverGenderTb.TabIndex = 24;
-            this.DriverGenderTb.Text = "Driver Gender";
+            this.DriverGenderCb.Location = new System.Drawing.Point(598, 209);
+            this.DriverGenderCb.Name = "DriverGenderCb";
+            this.DriverGenderCb.Size = new System.Drawing.Size(204, 33);
+            this.DriverGenderCb.TabIndex = 24;
+            this.DriverGenderCb.Text = "Driver Gender";
             // 
             // DriverAddressLbl
             // 
@@ -512,13 +512,13 @@
             this.Controls.Add(this.CustomerPicBx);
             this.Controls.Add(this.DriversPnl);
             this.Controls.Add(this.LogoPnl);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.DriversPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Drivers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Drivers";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.DriversPanel.ResumeLayout(false);
+            this.DriversPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DriverDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBx)).EndInit();
             this.LogoPnl.ResumeLayout(false);
@@ -539,7 +539,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel DriversPanel;
         private System.Windows.Forms.PictureBox LogoPicBx;
         private System.Windows.Forms.Panel LogoPnl;
         private System.Windows.Forms.Panel DriversPnl;
@@ -555,10 +555,10 @@
         private System.Windows.Forms.PictureBox UserPicBx;
         private System.Windows.Forms.Label DashboardPicLbl;
         private System.Windows.Forms.PictureBox DashboardPicBx;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.Button EditBtn;
         private System.Windows.Forms.Button SaveBtn;
-        private System.Windows.Forms.ComboBox DriverGenderTb;
+        private System.Windows.Forms.ComboBox DriverGenderCb;
         private System.Windows.Forms.Label DriverAddressLbl;
         private System.Windows.Forms.TextBox DriverAddressTxBx;
         private System.Windows.Forms.Label DriverJoinDateLbl;

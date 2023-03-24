@@ -166,6 +166,7 @@
             // BkgVehicleCb
             // 
             this.BkgVehicleCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BkgVehicleCb.ForeColor = System.Drawing.Color.Blue;
             this.BkgVehicleCb.FormattingEnabled = true;
             this.BkgVehicleCb.Items.AddRange(new object[] {
             "Yes",
@@ -310,7 +311,7 @@
             this.BkgTitleLbl.AutoSize = true;
             this.BkgTitleLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BkgTitleLbl.ForeColor = System.Drawing.Color.Blue;
-            this.BkgTitleLbl.Location = new System.Drawing.Point(377, 0);
+            this.BkgTitleLbl.Location = new System.Drawing.Point(320, 8);
             this.BkgTitleLbl.Name = "BkgTitleLbl";
             this.BkgTitleLbl.Size = new System.Drawing.Size(334, 42);
             this.BkgTitleLbl.TabIndex = 53;

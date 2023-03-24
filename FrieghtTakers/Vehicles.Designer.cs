@@ -51,7 +51,7 @@
             this.VColorTb = new System.Windows.Forms.TextBox();
             this.VEngTypeLbl = new System.Windows.Forms.Label();
             this.VMileageTb = new System.Windows.Forms.TextBox();
-            this.LicPlateLbl = new System.Windows.Forms.Label();
+            this.VLicPlateLbl = new System.Windows.Forms.Label();
             this.VLicPlateTb = new System.Windows.Forms.TextBox();
             this.VehiclesTitleLbl = new System.Windows.Forms.Label();
             this.VModelCb = new System.Windows.Forms.ComboBox();
@@ -97,7 +97,7 @@
             this.VehiclesPnl.Controls.Add(this.VColorTb);
             this.VehiclesPnl.Controls.Add(this.VEngTypeLbl);
             this.VehiclesPnl.Controls.Add(this.VMileageTb);
-            this.VehiclesPnl.Controls.Add(this.LicPlateLbl);
+            this.VehiclesPnl.Controls.Add(this.VLicPlateLbl);
             this.VehiclesPnl.Controls.Add(this.VLicPlateTb);
             this.VehiclesPnl.Controls.Add(this.VehiclesTitleLbl);
             this.VehiclesPnl.Location = new System.Drawing.Point(131, 2);
@@ -319,16 +319,16 @@
             this.VMileageTb.Size = new System.Drawing.Size(130, 29);
             this.VMileageTb.TabIndex = 44;
             // 
-            // LicPlateLbl
+            // VLicPlateLbl
             // 
-            this.LicPlateLbl.AutoSize = true;
-            this.LicPlateLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LicPlateLbl.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.LicPlateLbl.Location = new System.Drawing.Point(66, 117);
-            this.LicPlateLbl.Name = "LicPlateLbl";
-            this.LicPlateLbl.Size = new System.Drawing.Size(154, 25);
-            this.LicPlateLbl.TabIndex = 40;
-            this.LicPlateLbl.Text = "License Plate";
+            this.VLicPlateLbl.AutoSize = true;
+            this.VLicPlateLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VLicPlateLbl.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.VLicPlateLbl.Location = new System.Drawing.Point(66, 117);
+            this.VLicPlateLbl.Name = "VLicPlateLbl";
+            this.VLicPlateLbl.Size = new System.Drawing.Size(154, 25);
+            this.VLicPlateLbl.TabIndex = 40;
+            this.VLicPlateLbl.Text = "License Plate";
             // 
             // VLicPlateTb
             // 
@@ -431,12 +431,8 @@
             this.VBookedCb.ForeColor = System.Drawing.Color.SaddleBrown;
             this.VBookedCb.FormattingEnabled = true;
             this.VBookedCb.Items.AddRange(new object[] {
-            "Moving Truck",
-            "Truck ",
-            "Sprinter Van",
-            "SUV",
-            "Van",
-            "Sedan"});
+            "Yes",
+            "No"});
             this.VBookedCb.Location = new System.Drawing.Point(680, 254);
             this.VBookedCb.Name = "VBookedCb";
             this.VBookedCb.Size = new System.Drawing.Size(163, 31);
@@ -573,7 +569,7 @@
         private System.Windows.Forms.TextBox VColorTb;
         private System.Windows.Forms.Label VEngTypeLbl;
         private System.Windows.Forms.TextBox VMileageTb;
-        private System.Windows.Forms.Label LicPlateLbl;
+        private System.Windows.Forms.Label VLicPlateLbl;
         private System.Windows.Forms.TextBox VLicPlateTb;
         private System.Windows.Forms.Label VehiclesTitleLbl;
         private System.Windows.Forms.Button DeleteBtn;

@@ -38,7 +38,7 @@
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.EditBtn = new System.Windows.Forms.Button();
             this.SaveBtn = new System.Windows.Forms.Button();
-            this.UsersGenderTb = new System.Windows.Forms.ComboBox();
+            this.UsersGenderCb = new System.Windows.Forms.ComboBox();
             this.UserJoinDateLbl = new System.Windows.Forms.Label();
             this.UsersJoinDatePkr = new System.Windows.Forms.DateTimePicker();
             this.UsersDOBLbl = new System.Windows.Forms.Label();
@@ -96,7 +96,7 @@
             this.UserPnl.Controls.Add(this.DeleteBtn);
             this.UserPnl.Controls.Add(this.EditBtn);
             this.UserPnl.Controls.Add(this.SaveBtn);
-            this.UserPnl.Controls.Add(this.UsersGenderTb);
+            this.UserPnl.Controls.Add(this.UsersGenderCb);
             this.UserPnl.Controls.Add(this.UserJoinDateLbl);
             this.UserPnl.Controls.Add(this.UsersJoinDatePkr);
             this.UserPnl.Controls.Add(this.UsersDOBLbl);
@@ -199,22 +199,22 @@
             this.SaveBtn.Text = "SAVE";
             this.SaveBtn.UseVisualStyleBackColor = false;
             // 
-            // UsersGenderTb
+            // UsersGenderCb
             // 
-            this.UsersGenderTb.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsersGenderTb.ForeColor = System.Drawing.Color.Blue;
-            this.UsersGenderTb.FormattingEnabled = true;
-            this.UsersGenderTb.Items.AddRange(new object[] {
+            this.UsersGenderCb.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsersGenderCb.ForeColor = System.Drawing.Color.Blue;
+            this.UsersGenderCb.FormattingEnabled = true;
+            this.UsersGenderCb.Items.AddRange(new object[] {
             "Female",
             "Male",
             "Transsexual(female)",
             "Transsexual(male)",
             "Other"});
-            this.UsersGenderTb.Location = new System.Drawing.Point(562, 206);
-            this.UsersGenderTb.Name = "UsersGenderTb";
-            this.UsersGenderTb.Size = new System.Drawing.Size(237, 33);
-            this.UsersGenderTb.TabIndex = 44;
-            this.UsersGenderTb.Text = "Users Gender";
+            this.UsersGenderCb.Location = new System.Drawing.Point(562, 206);
+            this.UsersGenderCb.Name = "UsersGenderCb";
+            this.UsersGenderCb.Size = new System.Drawing.Size(237, 33);
+            this.UsersGenderCb.TabIndex = 44;
+            this.UsersGenderCb.Text = "Users Gender";
             // 
             // UserJoinDateLbl
             // 
@@ -598,7 +598,7 @@
         private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.Button EditBtn;
         private System.Windows.Forms.Button SaveBtn;
-        private System.Windows.Forms.ComboBox UsersGenderTb;
+        private System.Windows.Forms.ComboBox UsersGenderCb;
         private System.Windows.Forms.Label UserJoinDateLbl;
         private System.Windows.Forms.DateTimePicker UsersJoinDatePkr;
         private System.Windows.Forms.Label UsersDOBLbl;
