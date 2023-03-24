@@ -16,7 +16,7 @@ namespace FrieghtTakers
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Drivers());
+            Application.Run(new Users());
         }
     }
 }
