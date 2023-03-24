@@ -561,6 +561,7 @@
             this.Controls.Add(this.UserPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Users";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Users";
             this.UserPnl.ResumeLayout(false);
             this.UserPnl.PerformLayout();

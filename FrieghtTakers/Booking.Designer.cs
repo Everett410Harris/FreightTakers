@@ -30,6 +30,25 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Booking));
             this.BkgPanel = new System.Windows.Forms.Panel();
+            this.BkgUserCb = new System.Windows.Forms.ComboBox();
+            this.BkgDGV = new System.Windows.Forms.DataGridView();
+            this.BkgDropOffDateLbl = new System.Windows.Forms.Label();
+            this.BkgDropOffDatePkr = new System.Windows.Forms.DateTimePicker();
+            this.BkgDriverTb = new System.Windows.Forms.TextBox();
+            this.BkgVehicleCb = new System.Windows.Forms.ComboBox();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.EditBtn = new System.Windows.Forms.Button();
+            this.SaveBtn = new System.Windows.Forms.Button();
+            this.BkgPickupDateLbl = new System.Windows.Forms.Label();
+            this.BkgPickupDatePkr = new System.Windows.Forms.DateTimePicker();
+            this.BkgDriverLbl = new System.Windows.Forms.Label();
+            this.BkgCustomerPhoneLbl = new System.Windows.Forms.Label();
+            this.BkgCustomerPhoneTb = new System.Windows.Forms.TextBox();
+            this.BkgVehicleLbl = new System.Windows.Forms.Label();
+            this.BkgCustomerNameLbl = new System.Windows.Forms.Label();
+            this.BkgCustomerNameTb = new System.Windows.Forms.TextBox();
+            this.BkgUserNameLbl = new System.Windows.Forms.Label();
+            this.BkgTitleLbl = new System.Windows.Forms.Label();
             this.LogoPnl = new System.Windows.Forms.Panel();
             this.LogoPicBx = new System.Windows.Forms.PictureBox();
             this.DriversPicBx = new System.Windows.Forms.PictureBox();
@@ -47,27 +66,9 @@
             this.CustomerPicBx = new System.Windows.Forms.PictureBox();
             this.DashboardLbl = new System.Windows.Forms.Label();
             this.DashboardPicBx = new System.Windows.Forms.PictureBox();
-            this.DeleteBtn = new System.Windows.Forms.Button();
-            this.EditBtn = new System.Windows.Forms.Button();
-            this.SaveBtn = new System.Windows.Forms.Button();
-            this.BkgPickupDateLbl = new System.Windows.Forms.Label();
-            this.BkgPickupDatePkr = new System.Windows.Forms.DateTimePicker();
-            this.BkgDriverLbl = new System.Windows.Forms.Label();
-            this.BkgCustomerPhoneLbl = new System.Windows.Forms.Label();
-            this.BkgCustomerPhoneTb = new System.Windows.Forms.TextBox();
-            this.BkgVehicleLbl = new System.Windows.Forms.Label();
-            this.BkgCustomerNameLbl = new System.Windows.Forms.Label();
-            this.BkgCustomerNameTb = new System.Windows.Forms.TextBox();
-            this.BkgUserNameLbl = new System.Windows.Forms.Label();
-            this.BkgTitleLbl = new System.Windows.Forms.Label();
-            this.BkgVehicleCb = new System.Windows.Forms.ComboBox();
-            this.BkgDriverTb = new System.Windows.Forms.TextBox();
-            this.BkgDropOffDatePkr = new System.Windows.Forms.DateTimePicker();
-            this.BkgDropOffDateLbl = new System.Windows.Forms.Label();
-            this.BkgDGV = new System.Windows.Forms.DataGridView();
             this.RightCrnrExitPicBx = new System.Windows.Forms.PictureBox();
-            this.BkgUserCb = new System.Windows.Forms.ComboBox();
             this.BkgPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BkgDGV)).BeginInit();
             this.LogoPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DriversPicBx)).BeginInit();
@@ -78,7 +79,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.VehiclePicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomerPicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DashboardPicBx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BkgDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RightCrnrExitPicBx)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,6 +108,213 @@
             this.BkgPanel.Name = "BkgPanel";
             this.BkgPanel.Size = new System.Drawing.Size(1103, 928);
             this.BkgPanel.TabIndex = 0;
+            // 
+            // BkgUserCb
+            // 
+            this.BkgUserCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BkgUserCb.FormattingEnabled = true;
+            this.BkgUserCb.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.BkgUserCb.Location = new System.Drawing.Point(31, 136);
+            this.BkgUserCb.Name = "BkgUserCb";
+            this.BkgUserCb.Size = new System.Drawing.Size(237, 33);
+            this.BkgUserCb.TabIndex = 78;
+            // 
+            // BkgDGV
+            // 
+            this.BkgDGV.BackgroundColor = System.Drawing.Color.White;
+            this.BkgDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BkgDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.BkgDGV.Location = new System.Drawing.Point(3, 403);
+            this.BkgDGV.Name = "BkgDGV";
+            this.BkgDGV.Size = new System.Drawing.Size(1097, 525);
+            this.BkgDGV.TabIndex = 77;
+            // 
+            // BkgDropOffDateLbl
+            // 
+            this.BkgDropOffDateLbl.AutoSize = true;
+            this.BkgDropOffDateLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BkgDropOffDateLbl.ForeColor = System.Drawing.Color.Blue;
+            this.BkgDropOffDateLbl.Location = new System.Drawing.Point(650, 204);
+            this.BkgDropOffDateLbl.Name = "BkgDropOffDateLbl";
+            this.BkgDropOffDateLbl.Size = new System.Drawing.Size(153, 25);
+            this.BkgDropOffDateLbl.TabIndex = 76;
+            this.BkgDropOffDateLbl.Text = "Dropoff Date";
+            // 
+            // BkgDropOffDatePkr
+            // 
+            this.BkgDropOffDatePkr.CalendarForeColor = System.Drawing.Color.Blue;
+            this.BkgDropOffDatePkr.CalendarTitleBackColor = System.Drawing.Color.Blue;
+            this.BkgDropOffDatePkr.CalendarTitleForeColor = System.Drawing.Color.Blue;
+            this.BkgDropOffDatePkr.CalendarTrailingForeColor = System.Drawing.Color.Blue;
+            this.BkgDropOffDatePkr.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BkgDropOffDatePkr.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.BkgDropOffDatePkr.Location = new System.Drawing.Point(655, 232);
+            this.BkgDropOffDatePkr.Name = "BkgDropOffDatePkr";
+            this.BkgDropOffDatePkr.Size = new System.Drawing.Size(237, 26);
+            this.BkgDropOffDatePkr.TabIndex = 75;
+            // 
+            // BkgDriverTb
+            // 
+            this.BkgDriverTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BkgDriverTb.Location = new System.Drawing.Point(118, 232);
+            this.BkgDriverTb.Name = "BkgDriverTb";
+            this.BkgDriverTb.Size = new System.Drawing.Size(235, 31);
+            this.BkgDriverTb.TabIndex = 74;
+            // 
+            // BkgVehicleCb
+            // 
+            this.BkgVehicleCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BkgVehicleCb.FormattingEnabled = true;
+            this.BkgVehicleCb.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.BkgVehicleCb.Location = new System.Drawing.Point(833, 136);
+            this.BkgVehicleCb.Name = "BkgVehicleCb";
+            this.BkgVehicleCb.Size = new System.Drawing.Size(237, 33);
+            this.BkgVehicleCb.TabIndex = 73;
+            // 
+            // DeleteBtn
+            // 
+            this.DeleteBtn.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.DeleteBtn.ForeColor = System.Drawing.Color.Cyan;
+            this.DeleteBtn.Location = new System.Drawing.Point(727, 309);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(134, 58);
+            this.DeleteBtn.TabIndex = 68;
+            this.DeleteBtn.Text = "DELETE";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
+            // 
+            // EditBtn
+            // 
+            this.EditBtn.BackColor = System.Drawing.Color.DarkRed;
+            this.EditBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditBtn.ForeColor = System.Drawing.Color.Violet;
+            this.EditBtn.Location = new System.Drawing.Point(464, 309);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.Size = new System.Drawing.Size(134, 58);
+            this.EditBtn.TabIndex = 67;
+            this.EditBtn.Text = "EDIT";
+            this.EditBtn.UseVisualStyleBackColor = false;
+            // 
+            // SaveBtn
+            // 
+            this.SaveBtn.BackColor = System.Drawing.Color.Gold;
+            this.SaveBtn.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveBtn.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.SaveBtn.Location = new System.Drawing.Point(199, 309);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(134, 58);
+            this.SaveBtn.TabIndex = 66;
+            this.SaveBtn.Text = "SAVE";
+            this.SaveBtn.UseVisualStyleBackColor = false;
+            // 
+            // BkgPickupDateLbl
+            // 
+            this.BkgPickupDateLbl.AutoSize = true;
+            this.BkgPickupDateLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BkgPickupDateLbl.ForeColor = System.Drawing.Color.Blue;
+            this.BkgPickupDateLbl.Location = new System.Drawing.Point(388, 206);
+            this.BkgPickupDateLbl.Name = "BkgPickupDateLbl";
+            this.BkgPickupDateLbl.Size = new System.Drawing.Size(142, 25);
+            this.BkgPickupDateLbl.TabIndex = 64;
+            this.BkgPickupDateLbl.Text = "Pickup Date";
+            // 
+            // BkgPickupDatePkr
+            // 
+            this.BkgPickupDatePkr.CalendarForeColor = System.Drawing.Color.Blue;
+            this.BkgPickupDatePkr.CalendarTitleBackColor = System.Drawing.Color.Blue;
+            this.BkgPickupDatePkr.CalendarTitleForeColor = System.Drawing.Color.Blue;
+            this.BkgPickupDatePkr.CalendarTrailingForeColor = System.Drawing.Color.Blue;
+            this.BkgPickupDatePkr.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BkgPickupDatePkr.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.BkgPickupDatePkr.Location = new System.Drawing.Point(393, 234);
+            this.BkgPickupDatePkr.Name = "BkgPickupDatePkr";
+            this.BkgPickupDatePkr.Size = new System.Drawing.Size(237, 26);
+            this.BkgPickupDatePkr.TabIndex = 63;
+            // 
+            // BkgDriverLbl
+            // 
+            this.BkgDriverLbl.AutoSize = true;
+            this.BkgDriverLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BkgDriverLbl.ForeColor = System.Drawing.Color.Blue;
+            this.BkgDriverLbl.Location = new System.Drawing.Point(113, 206);
+            this.BkgDriverLbl.Name = "BkgDriverLbl";
+            this.BkgDriverLbl.Size = new System.Drawing.Size(177, 25);
+            this.BkgDriverLbl.TabIndex = 62;
+            this.BkgDriverLbl.Text = "Booking Driver";
+            // 
+            // BkgCustomerPhoneLbl
+            // 
+            this.BkgCustomerPhoneLbl.AutoSize = true;
+            this.BkgCustomerPhoneLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BkgCustomerPhoneLbl.ForeColor = System.Drawing.Color.Blue;
+            this.BkgCustomerPhoneLbl.Location = new System.Drawing.Point(563, 110);
+            this.BkgCustomerPhoneLbl.Name = "BkgCustomerPhoneLbl";
+            this.BkgCustomerPhoneLbl.Size = new System.Drawing.Size(192, 25);
+            this.BkgCustomerPhoneLbl.TabIndex = 60;
+            this.BkgCustomerPhoneLbl.Text = "Customer Phone";
+            // 
+            // BkgCustomerPhoneTb
+            // 
+            this.BkgCustomerPhoneTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BkgCustomerPhoneTb.Location = new System.Drawing.Point(568, 138);
+            this.BkgCustomerPhoneTb.Name = "BkgCustomerPhoneTb";
+            this.BkgCustomerPhoneTb.Size = new System.Drawing.Size(235, 31);
+            this.BkgCustomerPhoneTb.TabIndex = 59;
+            // 
+            // BkgVehicleLbl
+            // 
+            this.BkgVehicleLbl.AutoSize = true;
+            this.BkgVehicleLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BkgVehicleLbl.ForeColor = System.Drawing.Color.Blue;
+            this.BkgVehicleLbl.Location = new System.Drawing.Point(828, 110);
+            this.BkgVehicleLbl.Name = "BkgVehicleLbl";
+            this.BkgVehicleLbl.Size = new System.Drawing.Size(178, 25);
+            this.BkgVehicleLbl.TabIndex = 58;
+            this.BkgVehicleLbl.Text = "Booked Vehicle";
+            // 
+            // BkgCustomerNameLbl
+            // 
+            this.BkgCustomerNameLbl.AutoSize = true;
+            this.BkgCustomerNameLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BkgCustomerNameLbl.ForeColor = System.Drawing.Color.Blue;
+            this.BkgCustomerNameLbl.Location = new System.Drawing.Point(301, 110);
+            this.BkgCustomerNameLbl.Name = "BkgCustomerNameLbl";
+            this.BkgCustomerNameLbl.Size = new System.Drawing.Size(186, 25);
+            this.BkgCustomerNameLbl.TabIndex = 55;
+            this.BkgCustomerNameLbl.Text = "Customer Name";
+            // 
+            // BkgCustomerNameTb
+            // 
+            this.BkgCustomerNameTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BkgCustomerNameTb.Location = new System.Drawing.Point(306, 138);
+            this.BkgCustomerNameTb.Name = "BkgCustomerNameTb";
+            this.BkgCustomerNameTb.Size = new System.Drawing.Size(235, 31);
+            this.BkgCustomerNameTb.TabIndex = 56;
+            // 
+            // BkgUserNameLbl
+            // 
+            this.BkgUserNameLbl.AutoSize = true;
+            this.BkgUserNameLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BkgUserNameLbl.ForeColor = System.Drawing.Color.Blue;
+            this.BkgUserNameLbl.Location = new System.Drawing.Point(26, 110);
+            this.BkgUserNameLbl.Name = "BkgUserNameLbl";
+            this.BkgUserNameLbl.Size = new System.Drawing.Size(227, 25);
+            this.BkgUserNameLbl.TabIndex = 52;
+            this.BkgUserNameLbl.Text = "Booking User Name";
+            // 
+            // BkgTitleLbl
+            // 
+            this.BkgTitleLbl.AutoSize = true;
+            this.BkgTitleLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BkgTitleLbl.ForeColor = System.Drawing.Color.Blue;
+            this.BkgTitleLbl.Location = new System.Drawing.Point(377, 0);
+            this.BkgTitleLbl.Name = "BkgTitleLbl";
+            this.BkgTitleLbl.Size = new System.Drawing.Size(334, 42);
+            this.BkgTitleLbl.TabIndex = 53;
+            this.BkgTitleLbl.Text = "Manage Bookings";
             // 
             // LogoPnl
             // 
@@ -284,201 +491,6 @@
             this.DashboardPicBx.TabIndex = 25;
             this.DashboardPicBx.TabStop = false;
             // 
-            // DeleteBtn
-            // 
-            this.DeleteBtn.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.DeleteBtn.ForeColor = System.Drawing.Color.Cyan;
-            this.DeleteBtn.Location = new System.Drawing.Point(727, 309);
-            this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(134, 58);
-            this.DeleteBtn.TabIndex = 68;
-            this.DeleteBtn.Text = "DELETE";
-            this.DeleteBtn.UseVisualStyleBackColor = false;
-            // 
-            // EditBtn
-            // 
-            this.EditBtn.BackColor = System.Drawing.Color.DarkRed;
-            this.EditBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditBtn.ForeColor = System.Drawing.Color.Violet;
-            this.EditBtn.Location = new System.Drawing.Point(464, 309);
-            this.EditBtn.Name = "EditBtn";
-            this.EditBtn.Size = new System.Drawing.Size(134, 58);
-            this.EditBtn.TabIndex = 67;
-            this.EditBtn.Text = "EDIT";
-            this.EditBtn.UseVisualStyleBackColor = false;
-            // 
-            // SaveBtn
-            // 
-            this.SaveBtn.BackColor = System.Drawing.Color.Gold;
-            this.SaveBtn.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveBtn.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.SaveBtn.Location = new System.Drawing.Point(199, 309);
-            this.SaveBtn.Name = "SaveBtn";
-            this.SaveBtn.Size = new System.Drawing.Size(134, 58);
-            this.SaveBtn.TabIndex = 66;
-            this.SaveBtn.Text = "SAVE";
-            this.SaveBtn.UseVisualStyleBackColor = false;
-            // 
-            // BkgPickupDateLbl
-            // 
-            this.BkgPickupDateLbl.AutoSize = true;
-            this.BkgPickupDateLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BkgPickupDateLbl.ForeColor = System.Drawing.Color.Blue;
-            this.BkgPickupDateLbl.Location = new System.Drawing.Point(388, 206);
-            this.BkgPickupDateLbl.Name = "BkgPickupDateLbl";
-            this.BkgPickupDateLbl.Size = new System.Drawing.Size(142, 25);
-            this.BkgPickupDateLbl.TabIndex = 64;
-            this.BkgPickupDateLbl.Text = "Pickup Date";
-            // 
-            // BkgPickupDatePkr
-            // 
-            this.BkgPickupDatePkr.CalendarForeColor = System.Drawing.Color.Blue;
-            this.BkgPickupDatePkr.CalendarTitleBackColor = System.Drawing.Color.Blue;
-            this.BkgPickupDatePkr.CalendarTitleForeColor = System.Drawing.Color.Blue;
-            this.BkgPickupDatePkr.CalendarTrailingForeColor = System.Drawing.Color.Blue;
-            this.BkgPickupDatePkr.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BkgPickupDatePkr.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.BkgPickupDatePkr.Location = new System.Drawing.Point(393, 234);
-            this.BkgPickupDatePkr.Name = "BkgPickupDatePkr";
-            this.BkgPickupDatePkr.Size = new System.Drawing.Size(237, 26);
-            this.BkgPickupDatePkr.TabIndex = 63;
-            // 
-            // BkgDriverLbl
-            // 
-            this.BkgDriverLbl.AutoSize = true;
-            this.BkgDriverLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BkgDriverLbl.ForeColor = System.Drawing.Color.Blue;
-            this.BkgDriverLbl.Location = new System.Drawing.Point(113, 206);
-            this.BkgDriverLbl.Name = "BkgDriverLbl";
-            this.BkgDriverLbl.Size = new System.Drawing.Size(177, 25);
-            this.BkgDriverLbl.TabIndex = 62;
-            this.BkgDriverLbl.Text = "Booking Driver";
-            // 
-            // BkgCustomerPhoneLbl
-            // 
-            this.BkgCustomerPhoneLbl.AutoSize = true;
-            this.BkgCustomerPhoneLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BkgCustomerPhoneLbl.ForeColor = System.Drawing.Color.Blue;
-            this.BkgCustomerPhoneLbl.Location = new System.Drawing.Point(563, 110);
-            this.BkgCustomerPhoneLbl.Name = "BkgCustomerPhoneLbl";
-            this.BkgCustomerPhoneLbl.Size = new System.Drawing.Size(192, 25);
-            this.BkgCustomerPhoneLbl.TabIndex = 60;
-            this.BkgCustomerPhoneLbl.Text = "Customer Phone";
-            // 
-            // BkgCustomerPhoneTb
-            // 
-            this.BkgCustomerPhoneTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BkgCustomerPhoneTb.Location = new System.Drawing.Point(568, 138);
-            this.BkgCustomerPhoneTb.Name = "BkgCustomerPhoneTb";
-            this.BkgCustomerPhoneTb.Size = new System.Drawing.Size(235, 31);
-            this.BkgCustomerPhoneTb.TabIndex = 59;
-            // 
-            // BkgVehicleLbl
-            // 
-            this.BkgVehicleLbl.AutoSize = true;
-            this.BkgVehicleLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BkgVehicleLbl.ForeColor = System.Drawing.Color.Blue;
-            this.BkgVehicleLbl.Location = new System.Drawing.Point(828, 110);
-            this.BkgVehicleLbl.Name = "BkgVehicleLbl";
-            this.BkgVehicleLbl.Size = new System.Drawing.Size(178, 25);
-            this.BkgVehicleLbl.TabIndex = 58;
-            this.BkgVehicleLbl.Text = "Booked Vehicle";
-            // 
-            // BkgCustomerNameLbl
-            // 
-            this.BkgCustomerNameLbl.AutoSize = true;
-            this.BkgCustomerNameLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BkgCustomerNameLbl.ForeColor = System.Drawing.Color.Blue;
-            this.BkgCustomerNameLbl.Location = new System.Drawing.Point(301, 110);
-            this.BkgCustomerNameLbl.Name = "BkgCustomerNameLbl";
-            this.BkgCustomerNameLbl.Size = new System.Drawing.Size(186, 25);
-            this.BkgCustomerNameLbl.TabIndex = 55;
-            this.BkgCustomerNameLbl.Text = "Customer Name";
-            // 
-            // BkgCustomerNameTb
-            // 
-            this.BkgCustomerNameTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BkgCustomerNameTb.Location = new System.Drawing.Point(306, 138);
-            this.BkgCustomerNameTb.Name = "BkgCustomerNameTb";
-            this.BkgCustomerNameTb.Size = new System.Drawing.Size(235, 31);
-            this.BkgCustomerNameTb.TabIndex = 56;
-            // 
-            // BkgUserNameLbl
-            // 
-            this.BkgUserNameLbl.AutoSize = true;
-            this.BkgUserNameLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BkgUserNameLbl.ForeColor = System.Drawing.Color.Blue;
-            this.BkgUserNameLbl.Location = new System.Drawing.Point(26, 110);
-            this.BkgUserNameLbl.Name = "BkgUserNameLbl";
-            this.BkgUserNameLbl.Size = new System.Drawing.Size(227, 25);
-            this.BkgUserNameLbl.TabIndex = 52;
-            this.BkgUserNameLbl.Text = "Booking User Name";
-            // 
-            // BkgTitleLbl
-            // 
-            this.BkgTitleLbl.AutoSize = true;
-            this.BkgTitleLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BkgTitleLbl.ForeColor = System.Drawing.Color.Blue;
-            this.BkgTitleLbl.Location = new System.Drawing.Point(377, 0);
-            this.BkgTitleLbl.Name = "BkgTitleLbl";
-            this.BkgTitleLbl.Size = new System.Drawing.Size(334, 42);
-            this.BkgTitleLbl.TabIndex = 53;
-            this.BkgTitleLbl.Text = "Manage Bookings";
-            // 
-            // BkgVehicleCb
-            // 
-            this.BkgVehicleCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BkgVehicleCb.FormattingEnabled = true;
-            this.BkgVehicleCb.Items.AddRange(new object[] {
-            "Yes",
-            "No"});
-            this.BkgVehicleCb.Location = new System.Drawing.Point(833, 136);
-            this.BkgVehicleCb.Name = "BkgVehicleCb";
-            this.BkgVehicleCb.Size = new System.Drawing.Size(237, 33);
-            this.BkgVehicleCb.TabIndex = 73;
-            // 
-            // BkgDriverTb
-            // 
-            this.BkgDriverTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BkgDriverTb.Location = new System.Drawing.Point(118, 232);
-            this.BkgDriverTb.Name = "BkgDriverTb";
-            this.BkgDriverTb.Size = new System.Drawing.Size(235, 31);
-            this.BkgDriverTb.TabIndex = 74;
-            // 
-            // BkgDropOffDatePkr
-            // 
-            this.BkgDropOffDatePkr.CalendarForeColor = System.Drawing.Color.Blue;
-            this.BkgDropOffDatePkr.CalendarTitleBackColor = System.Drawing.Color.Blue;
-            this.BkgDropOffDatePkr.CalendarTitleForeColor = System.Drawing.Color.Blue;
-            this.BkgDropOffDatePkr.CalendarTrailingForeColor = System.Drawing.Color.Blue;
-            this.BkgDropOffDatePkr.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BkgDropOffDatePkr.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.BkgDropOffDatePkr.Location = new System.Drawing.Point(655, 232);
-            this.BkgDropOffDatePkr.Name = "BkgDropOffDatePkr";
-            this.BkgDropOffDatePkr.Size = new System.Drawing.Size(237, 26);
-            this.BkgDropOffDatePkr.TabIndex = 75;
-            // 
-            // BkgDropOffDateLbl
-            // 
-            this.BkgDropOffDateLbl.AutoSize = true;
-            this.BkgDropOffDateLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BkgDropOffDateLbl.ForeColor = System.Drawing.Color.Blue;
-            this.BkgDropOffDateLbl.Location = new System.Drawing.Point(650, 204);
-            this.BkgDropOffDateLbl.Name = "BkgDropOffDateLbl";
-            this.BkgDropOffDateLbl.Size = new System.Drawing.Size(153, 25);
-            this.BkgDropOffDateLbl.TabIndex = 76;
-            this.BkgDropOffDateLbl.Text = "Dropoff Date";
-            // 
-            // BkgDGV
-            // 
-            this.BkgDGV.BackgroundColor = System.Drawing.Color.White;
-            this.BkgDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BkgDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.BkgDGV.Location = new System.Drawing.Point(3, 403);
-            this.BkgDGV.Name = "BkgDGV";
-            this.BkgDGV.Size = new System.Drawing.Size(1097, 525);
-            this.BkgDGV.TabIndex = 77;
-            // 
             // RightCrnrExitPicBx
             // 
             this.RightCrnrExitPicBx.Image = ((System.Drawing.Image)(resources.GetObject("RightCrnrExitPicBx.Image")));
@@ -488,18 +500,6 @@
             this.RightCrnrExitPicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.RightCrnrExitPicBx.TabIndex = 39;
             this.RightCrnrExitPicBx.TabStop = false;
-            // 
-            // BkgUserCb
-            // 
-            this.BkgUserCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BkgUserCb.FormattingEnabled = true;
-            this.BkgUserCb.Items.AddRange(new object[] {
-            "Yes",
-            "No"});
-            this.BkgUserCb.Location = new System.Drawing.Point(31, 136);
-            this.BkgUserCb.Name = "BkgUserCb";
-            this.BkgUserCb.Size = new System.Drawing.Size(237, 33);
-            this.BkgUserCb.TabIndex = 78;
             // 
             // Booking
             // 
@@ -524,9 +524,11 @@
             this.Controls.Add(this.BookingLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Booking";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Booking";
             this.BkgPanel.ResumeLayout(false);
             this.BkgPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BkgDGV)).EndInit();
             this.LogoPnl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DriversPicBx)).EndInit();
@@ -538,7 +540,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.VehiclePicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomerPicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DashboardPicBx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BkgDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RightCrnrExitPicBx)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

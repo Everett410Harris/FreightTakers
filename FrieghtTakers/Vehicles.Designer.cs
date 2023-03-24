@@ -521,6 +521,7 @@
             this.Controls.Add(this.CustomerLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Vehicles";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vehicles";
             this.VehiclesPnl.ResumeLayout(false);
             this.VehiclesPnl.PerformLayout();
