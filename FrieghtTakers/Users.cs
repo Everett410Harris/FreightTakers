@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace FrieghtTakers
 {
-    public partial class Drivers : Form
+    public partial class Users : Form
     {
-        public Drivers()
+        public Users()
         {
             InitializeComponent();
-        }
-
-        private void DriverDOBdatePicker_ValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
