@@ -72,6 +72,12 @@
     <Compile Include="Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vehicles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicles.Designer.cs">
+      <DependentUpon>Vehicles.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Booking.resx">
       <DependentUpon>Booking.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +98,9 @@
     </Compile>
     <EmbeddedResource Include="Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicles.resx">
+      <DependentUpon>Vehicles.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

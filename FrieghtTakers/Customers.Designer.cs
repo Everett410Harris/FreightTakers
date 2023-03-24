@@ -228,7 +228,7 @@
             this.CustDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.CustDGV.Location = new System.Drawing.Point(3, 430);
             this.CustDGV.Name = "CustDGV";
-            this.CustDGV.Size = new System.Drawing.Size(1094, 496);
+            this.CustDGV.Size = new System.Drawing.Size(1110, 496);
             this.CustDGV.TabIndex = 53;
             // 
             // DashboardLbl
