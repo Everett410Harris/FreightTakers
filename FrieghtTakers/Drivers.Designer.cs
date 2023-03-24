@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Drivers));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.DriverPhoneLbl = new System.Windows.Forms.Label();
+            this.DriverPhoneTb = new System.Windows.Forms.TextBox();
             this.DriverDGV = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
             this.EditBtn = new System.Windows.Forms.Button();
@@ -64,8 +66,6 @@
             this.ExitPicBx = new System.Windows.Forms.PictureBox();
             this.ExitLbl = new System.Windows.Forms.Label();
             this.RightCrnrExitPicBx = new System.Windows.Forms.PictureBox();
-            this.DriverPhoneTb = new System.Windows.Forms.TextBox();
-            this.DriverPhoneLbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DriverDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBx)).BeginInit();
@@ -106,6 +106,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1146, 917);
             this.panel1.TabIndex = 0;
+            // 
+            // DriverPhoneLbl
+            // 
+            this.DriverPhoneLbl.AutoSize = true;
+            this.DriverPhoneLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DriverPhoneLbl.ForeColor = System.Drawing.Color.Blue;
+            this.DriverPhoneLbl.Location = new System.Drawing.Point(579, 95);
+            this.DriverPhoneLbl.Name = "DriverPhoneLbl";
+            this.DriverPhoneLbl.Size = new System.Drawing.Size(158, 25);
+            this.DriverPhoneLbl.TabIndex = 30;
+            this.DriverPhoneLbl.Text = "Driver Phone";
+            // 
+            // DriverPhoneTb
+            // 
+            this.DriverPhoneTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DriverPhoneTb.Location = new System.Drawing.Point(584, 123);
+            this.DriverPhoneTb.Name = "DriverPhoneTb";
+            this.DriverPhoneTb.Size = new System.Drawing.Size(235, 31);
+            this.DriverPhoneTb.TabIndex = 29;
             // 
             // DriverDGV
             // 
@@ -466,31 +485,12 @@
             // RightCrnrExitPicBx
             // 
             this.RightCrnrExitPicBx.Image = ((System.Drawing.Image)(resources.GetObject("RightCrnrExitPicBx.Image")));
-            this.RightCrnrExitPicBx.Location = new System.Drawing.Point(1344, 9);
+            this.RightCrnrExitPicBx.Location = new System.Drawing.Point(1344, 27);
             this.RightCrnrExitPicBx.Name = "RightCrnrExitPicBx";
             this.RightCrnrExitPicBx.Size = new System.Drawing.Size(51, 50);
             this.RightCrnrExitPicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.RightCrnrExitPicBx.TabIndex = 13;
             this.RightCrnrExitPicBx.TabStop = false;
-            // 
-            // DriverPhoneTb
-            // 
-            this.DriverPhoneTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DriverPhoneTb.Location = new System.Drawing.Point(584, 123);
-            this.DriverPhoneTb.Name = "DriverPhoneTb";
-            this.DriverPhoneTb.Size = new System.Drawing.Size(235, 31);
-            this.DriverPhoneTb.TabIndex = 29;
-            // 
-            // DriverPhoneLbl
-            // 
-            this.DriverPhoneLbl.AutoSize = true;
-            this.DriverPhoneLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DriverPhoneLbl.ForeColor = System.Drawing.Color.Blue;
-            this.DriverPhoneLbl.Location = new System.Drawing.Point(579, 95);
-            this.DriverPhoneLbl.Name = "DriverPhoneLbl";
-            this.DriverPhoneLbl.Size = new System.Drawing.Size(158, 25);
-            this.DriverPhoneLbl.TabIndex = 30;
-            this.DriverPhoneLbl.Text = "Driver Phone";
             // 
             // Drivers
             // 
