@@ -16,5 +16,12 @@ namespace FrieghtTakers
         {
             InitializeComponent();
         }
+
+        private void DriversPicBx_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Drivers drivers = new Drivers();
+            drivers.Show();
+        }
     }
 }

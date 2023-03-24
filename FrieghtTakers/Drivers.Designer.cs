@@ -439,6 +439,7 @@
             this.UserPicBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.UserPicBx.TabIndex = 7;
             this.UserPicBx.TabStop = false;
+            this.UserPicBx.Click += new System.EventHandler(this.UserPicBx_Click);
             // 
             // DashboardPicLbl
             // 

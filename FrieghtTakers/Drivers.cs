@@ -21,5 +21,12 @@ namespace FrieghtTakers
         {
 
         }
+
+        private void UserPicBx_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Users users = new Users();
+            users.Show();
+        }
     }
 }

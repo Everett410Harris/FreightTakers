@@ -509,6 +509,7 @@
             this.DriversPicBx.Size = new System.Drawing.Size(51, 50);
             this.DriversPicBx.TabIndex = 0;
             this.DriversPicBx.TabStop = false;
+            this.DriversPicBx.Click += new System.EventHandler(this.DriversPicBx_Click);
             // 
             // LogoPnl
             // 
