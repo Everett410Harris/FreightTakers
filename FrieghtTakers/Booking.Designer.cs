@@ -1,4 +1,4 @@
-﻿namespace FrieghtTakers
+﻿namespace FreightTakers
 {
     partial class Booking
     {

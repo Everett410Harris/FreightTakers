@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FrieghtTakers.Properties
+namespace FreightTakers.Properties
 {
 
 
