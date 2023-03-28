@@ -30,6 +30,23 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vehicles));
             this.VehiclesPnl = new System.Windows.Forms.Panel();
+            this.VehicleDGV = new System.Windows.Forms.DataGridView();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.EditBtn = new System.Windows.Forms.Button();
+            this.SaveBtn = new System.Windows.Forms.Button();
+            this.VBookedCb = new System.Windows.Forms.ComboBox();
+            this.VMileageLbl = new System.Windows.Forms.Label();
+            this.VColorLbl = new System.Windows.Forms.Label();
+            this.VEngTypeCb = new System.Windows.Forms.ComboBox();
+            this.VYearCb = new System.Windows.Forms.ComboBox();
+            this.VModelCb = new System.Windows.Forms.ComboBox();
+            this.VYearLbl = new System.Windows.Forms.Label();
+            this.VColorTb = new System.Windows.Forms.TextBox();
+            this.VEngTypeLbl = new System.Windows.Forms.Label();
+            this.VMileageTb = new System.Windows.Forms.TextBox();
+            this.VLicPlateLbl = new System.Windows.Forms.Label();
+            this.VLicPlateTb = new System.Windows.Forms.TextBox();
+            this.VehiclesTitleLbl = new System.Windows.Forms.Label();
             this.LogoPnl = new System.Windows.Forms.Panel();
             this.LogoPicBx = new System.Windows.Forms.PictureBox();
             this.DashboardLbl = new System.Windows.Forms.Label();
@@ -47,25 +64,9 @@
             this.UserPicBx = new System.Windows.Forms.PictureBox();
             this.BookingPicBx = new System.Windows.Forms.PictureBox();
             this.BookingLbl = new System.Windows.Forms.Label();
-            this.VYearLbl = new System.Windows.Forms.Label();
-            this.VColorTb = new System.Windows.Forms.TextBox();
-            this.VEngTypeLbl = new System.Windows.Forms.Label();
-            this.VMileageTb = new System.Windows.Forms.TextBox();
-            this.VLicPlateLbl = new System.Windows.Forms.Label();
-            this.VLicPlateTb = new System.Windows.Forms.TextBox();
-            this.VehiclesTitleLbl = new System.Windows.Forms.Label();
-            this.VModelCb = new System.Windows.Forms.ComboBox();
-            this.VYearCb = new System.Windows.Forms.ComboBox();
-            this.VEngTypeCb = new System.Windows.Forms.ComboBox();
-            this.VColorLbl = new System.Windows.Forms.Label();
-            this.VMileageLbl = new System.Windows.Forms.Label();
-            this.VBookedCb = new System.Windows.Forms.ComboBox();
-            this.DeleteBtn = new System.Windows.Forms.Button();
-            this.EditBtn = new System.Windows.Forms.Button();
-            this.SaveBtn = new System.Windows.Forms.Button();
-            this.VehicleDGV = new System.Windows.Forms.DataGridView();
             this.RightCrnrExitPicBx = new System.Windows.Forms.PictureBox();
             this.VehiclesPnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.VehicleDGV)).BeginInit();
             this.LogoPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DashboardPicBx)).BeginInit();
@@ -76,7 +77,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ExitPicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserPicBx)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BookingPicBx)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.VehicleDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RightCrnrExitPicBx)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,6 +104,210 @@
             this.VehiclesPnl.Name = "VehiclesPnl";
             this.VehiclesPnl.Size = new System.Drawing.Size(1066, 926);
             this.VehiclesPnl.TabIndex = 0;
+            // 
+            // VehicleDGV
+            // 
+            this.VehicleDGV.BackgroundColor = System.Drawing.Color.White;
+            this.VehicleDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.VehicleDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.VehicleDGV.Location = new System.Drawing.Point(3, 439);
+            this.VehicleDGV.Name = "VehicleDGV";
+            this.VehicleDGV.Size = new System.Drawing.Size(1060, 484);
+            this.VehicleDGV.TabIndex = 56;
+            // 
+            // DeleteBtn
+            // 
+            this.DeleteBtn.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.DeleteBtn.ForeColor = System.Drawing.Color.Cyan;
+            this.DeleteBtn.Location = new System.Drawing.Point(670, 345);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(134, 58);
+            this.DeleteBtn.TabIndex = 55;
+            this.DeleteBtn.Text = "DELETE";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
+            // 
+            // EditBtn
+            // 
+            this.EditBtn.BackColor = System.Drawing.Color.DarkRed;
+            this.EditBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditBtn.ForeColor = System.Drawing.Color.Violet;
+            this.EditBtn.Location = new System.Drawing.Point(407, 345);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.Size = new System.Drawing.Size(134, 58);
+            this.EditBtn.TabIndex = 54;
+            this.EditBtn.Text = "EDIT";
+            this.EditBtn.UseVisualStyleBackColor = false;
+            // 
+            // SaveBtn
+            // 
+            this.SaveBtn.BackColor = System.Drawing.Color.Gold;
+            this.SaveBtn.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveBtn.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.SaveBtn.Location = new System.Drawing.Point(142, 345);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(134, 58);
+            this.SaveBtn.TabIndex = 53;
+            this.SaveBtn.Text = "SAVE";
+            this.SaveBtn.UseVisualStyleBackColor = false;
+            // 
+            // VBookedCb
+            // 
+            this.VBookedCb.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VBookedCb.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.VBookedCb.FormattingEnabled = true;
+            this.VBookedCb.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.VBookedCb.Location = new System.Drawing.Point(680, 254);
+            this.VBookedCb.Name = "VBookedCb";
+            this.VBookedCb.Size = new System.Drawing.Size(163, 31);
+            this.VBookedCb.TabIndex = 52;
+            this.VBookedCb.Text = "Booked";
+            // 
+            // VMileageLbl
+            // 
+            this.VMileageLbl.AutoSize = true;
+            this.VMileageLbl.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VMileageLbl.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.VMileageLbl.Location = new System.Drawing.Point(157, 230);
+            this.VMileageLbl.Name = "VMileageLbl";
+            this.VMileageLbl.Size = new System.Drawing.Size(87, 23);
+            this.VMileageLbl.TabIndex = 51;
+            this.VMileageLbl.Text = "Mileage";
+            // 
+            // VColorLbl
+            // 
+            this.VColorLbl.AutoSize = true;
+            this.VColorLbl.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VColorLbl.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.VColorLbl.Location = new System.Drawing.Point(417, 230);
+            this.VColorLbl.Name = "VColorLbl";
+            this.VColorLbl.Size = new System.Drawing.Size(65, 23);
+            this.VColorLbl.TabIndex = 50;
+            this.VColorLbl.Text = "Color";
+            // 
+            // VEngTypeCb
+            // 
+            this.VEngTypeCb.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VEngTypeCb.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.VEngTypeCb.FormattingEnabled = true;
+            this.VEngTypeCb.ItemHeight = 23;
+            this.VEngTypeCb.Items.AddRange(new object[] {
+            "Electric",
+            "Gasoline",
+            "Disel"});
+            this.VEngTypeCb.Location = new System.Drawing.Point(823, 145);
+            this.VEngTypeCb.Name = "VEngTypeCb";
+            this.VEngTypeCb.Size = new System.Drawing.Size(148, 31);
+            this.VEngTypeCb.TabIndex = 49;
+            // 
+            // VYearCb
+            // 
+            this.VYearCb.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VYearCb.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.VYearCb.FormattingEnabled = true;
+            this.VYearCb.Items.AddRange(new object[] {
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023"});
+            this.VYearCb.Location = new System.Drawing.Point(574, 145);
+            this.VYearCb.Name = "VYearCb";
+            this.VYearCb.Size = new System.Drawing.Size(154, 31);
+            this.VYearCb.TabIndex = 48;
+            // 
+            // VModelCb
+            // 
+            this.VModelCb.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VModelCb.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.VModelCb.FormattingEnabled = true;
+            this.VModelCb.ItemHeight = 23;
+            this.VModelCb.Items.AddRange(new object[] {
+            "Moving Truck",
+            "Truck ",
+            "Sprinter Van",
+            "SUV",
+            "Van",
+            "Sedan"});
+            this.VModelCb.Location = new System.Drawing.Point(345, 140);
+            this.VModelCb.Name = "VModelCb";
+            this.VModelCb.Size = new System.Drawing.Size(163, 31);
+            this.VModelCb.TabIndex = 47;
+            this.VModelCb.Text = "MODEL";
+            // 
+            // VYearLbl
+            // 
+            this.VYearLbl.AutoSize = true;
+            this.VYearLbl.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VYearLbl.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.VYearLbl.Location = new System.Drawing.Point(570, 119);
+            this.VYearLbl.Name = "VYearLbl";
+            this.VYearLbl.Size = new System.Drawing.Size(134, 23);
+            this.VYearLbl.TabIndex = 46;
+            this.VYearLbl.Text = "Vehicle Year";
+            // 
+            // VColorTb
+            // 
+            this.VColorTb.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VColorTb.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.VColorTb.Location = new System.Drawing.Point(426, 258);
+            this.VColorTb.Name = "VColorTb";
+            this.VColorTb.Size = new System.Drawing.Size(123, 29);
+            this.VColorTb.TabIndex = 45;
+            // 
+            // VEngTypeLbl
+            // 
+            this.VEngTypeLbl.AutoSize = true;
+            this.VEngTypeLbl.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VEngTypeLbl.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.VEngTypeLbl.Location = new System.Drawing.Point(812, 117);
+            this.VEngTypeLbl.Name = "VEngTypeLbl";
+            this.VEngTypeLbl.Size = new System.Drawing.Size(132, 23);
+            this.VEngTypeLbl.TabIndex = 43;
+            this.VEngTypeLbl.Text = "Engine Type";
+            // 
+            // VMileageTb
+            // 
+            this.VMileageTb.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VMileageTb.Location = new System.Drawing.Point(161, 256);
+            this.VMileageTb.Name = "VMileageTb";
+            this.VMileageTb.Size = new System.Drawing.Size(130, 29);
+            this.VMileageTb.TabIndex = 44;
+            // 
+            // VLicPlateLbl
+            // 
+            this.VLicPlateLbl.AutoSize = true;
+            this.VLicPlateLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VLicPlateLbl.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.VLicPlateLbl.Location = new System.Drawing.Point(66, 117);
+            this.VLicPlateLbl.Name = "VLicPlateLbl";
+            this.VLicPlateLbl.Size = new System.Drawing.Size(154, 25);
+            this.VLicPlateLbl.TabIndex = 40;
+            this.VLicPlateLbl.Text = "License Plate";
+            // 
+            // VLicPlateTb
+            // 
+            this.VLicPlateTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VLicPlateTb.Location = new System.Drawing.Point(62, 142);
+            this.VLicPlateTb.Name = "VLicPlateTb";
+            this.VLicPlateTb.Size = new System.Drawing.Size(199, 29);
+            this.VLicPlateTb.TabIndex = 42;
+            // 
+            // VehiclesTitleLbl
+            // 
+            this.VehiclesTitleLbl.AutoSize = true;
+            this.VehiclesTitleLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VehiclesTitleLbl.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.VehiclesTitleLbl.Location = new System.Drawing.Point(414, 15);
+            this.VehiclesTitleLbl.Name = "VehiclesTitleLbl";
+            this.VehiclesTitleLbl.Size = new System.Drawing.Size(168, 42);
+            this.VehiclesTitleLbl.TabIndex = 41;
+            this.VehiclesTitleLbl.Text = "Vehicles";
             // 
             // LogoPnl
             // 
@@ -220,7 +424,7 @@
             // 
             this.CustomerLbl.AutoSize = true;
             this.CustomerLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerLbl.ForeColor = System.Drawing.Color.Lime;
+            this.CustomerLbl.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.CustomerLbl.Location = new System.Drawing.Point(27, 267);
             this.CustomerLbl.Name = "CustomerLbl";
             this.CustomerLbl.Size = new System.Drawing.Size(86, 20);
@@ -242,7 +446,7 @@
             // 
             this.VehiclesLbl.AutoSize = true;
             this.VehiclesLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VehiclesLbl.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.VehiclesLbl.ForeColor = System.Drawing.Color.Lime;
             this.VehiclesLbl.Location = new System.Drawing.Point(37, 366);
             this.VehiclesLbl.Name = "VehiclesLbl";
             this.VehiclesLbl.Size = new System.Drawing.Size(77, 20);
@@ -279,210 +483,6 @@
             this.BookingLbl.Size = new System.Drawing.Size(74, 20);
             this.BookingLbl.TabIndex = 63;
             this.BookingLbl.Text = "Booking";
-            // 
-            // VYearLbl
-            // 
-            this.VYearLbl.AutoSize = true;
-            this.VYearLbl.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VYearLbl.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.VYearLbl.Location = new System.Drawing.Point(570, 119);
-            this.VYearLbl.Name = "VYearLbl";
-            this.VYearLbl.Size = new System.Drawing.Size(134, 23);
-            this.VYearLbl.TabIndex = 46;
-            this.VYearLbl.Text = "Vehicle Year";
-            // 
-            // VColorTb
-            // 
-            this.VColorTb.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VColorTb.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.VColorTb.Location = new System.Drawing.Point(426, 258);
-            this.VColorTb.Name = "VColorTb";
-            this.VColorTb.Size = new System.Drawing.Size(123, 29);
-            this.VColorTb.TabIndex = 45;
-            // 
-            // VEngTypeLbl
-            // 
-            this.VEngTypeLbl.AutoSize = true;
-            this.VEngTypeLbl.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VEngTypeLbl.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.VEngTypeLbl.Location = new System.Drawing.Point(812, 117);
-            this.VEngTypeLbl.Name = "VEngTypeLbl";
-            this.VEngTypeLbl.Size = new System.Drawing.Size(132, 23);
-            this.VEngTypeLbl.TabIndex = 43;
-            this.VEngTypeLbl.Text = "Engine Type";
-            // 
-            // VMileageTb
-            // 
-            this.VMileageTb.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VMileageTb.Location = new System.Drawing.Point(161, 256);
-            this.VMileageTb.Name = "VMileageTb";
-            this.VMileageTb.Size = new System.Drawing.Size(130, 29);
-            this.VMileageTb.TabIndex = 44;
-            // 
-            // VLicPlateLbl
-            // 
-            this.VLicPlateLbl.AutoSize = true;
-            this.VLicPlateLbl.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VLicPlateLbl.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.VLicPlateLbl.Location = new System.Drawing.Point(66, 117);
-            this.VLicPlateLbl.Name = "VLicPlateLbl";
-            this.VLicPlateLbl.Size = new System.Drawing.Size(154, 25);
-            this.VLicPlateLbl.TabIndex = 40;
-            this.VLicPlateLbl.Text = "License Plate";
-            // 
-            // VLicPlateTb
-            // 
-            this.VLicPlateTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VLicPlateTb.Location = new System.Drawing.Point(62, 142);
-            this.VLicPlateTb.Name = "VLicPlateTb";
-            this.VLicPlateTb.Size = new System.Drawing.Size(199, 29);
-            this.VLicPlateTb.TabIndex = 42;
-            // 
-            // VehiclesTitleLbl
-            // 
-            this.VehiclesTitleLbl.AutoSize = true;
-            this.VehiclesTitleLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VehiclesTitleLbl.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.VehiclesTitleLbl.Location = new System.Drawing.Point(414, 15);
-            this.VehiclesTitleLbl.Name = "VehiclesTitleLbl";
-            this.VehiclesTitleLbl.Size = new System.Drawing.Size(168, 42);
-            this.VehiclesTitleLbl.TabIndex = 41;
-            this.VehiclesTitleLbl.Text = "Vehicles";
-            // 
-            // VModelCb
-            // 
-            this.VModelCb.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VModelCb.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.VModelCb.FormattingEnabled = true;
-            this.VModelCb.ItemHeight = 23;
-            this.VModelCb.Items.AddRange(new object[] {
-            "Moving Truck",
-            "Truck ",
-            "Sprinter Van",
-            "SUV",
-            "Van",
-            "Sedan"});
-            this.VModelCb.Location = new System.Drawing.Point(345, 140);
-            this.VModelCb.Name = "VModelCb";
-            this.VModelCb.Size = new System.Drawing.Size(163, 31);
-            this.VModelCb.TabIndex = 47;
-            this.VModelCb.Text = "MODEL";
-            // 
-            // VYearCb
-            // 
-            this.VYearCb.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VYearCb.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.VYearCb.FormattingEnabled = true;
-            this.VYearCb.Items.AddRange(new object[] {
-            "2015",
-            "2016",
-            "2017",
-            "2018",
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023"});
-            this.VYearCb.Location = new System.Drawing.Point(574, 145);
-            this.VYearCb.Name = "VYearCb";
-            this.VYearCb.Size = new System.Drawing.Size(154, 31);
-            this.VYearCb.TabIndex = 48;
-            // 
-            // VEngTypeCb
-            // 
-            this.VEngTypeCb.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VEngTypeCb.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.VEngTypeCb.FormattingEnabled = true;
-            this.VEngTypeCb.ItemHeight = 23;
-            this.VEngTypeCb.Items.AddRange(new object[] {
-            "Electric",
-            "Gasoline",
-            "Disel"});
-            this.VEngTypeCb.Location = new System.Drawing.Point(823, 145);
-            this.VEngTypeCb.Name = "VEngTypeCb";
-            this.VEngTypeCb.Size = new System.Drawing.Size(148, 31);
-            this.VEngTypeCb.TabIndex = 49;
-            // 
-            // VColorLbl
-            // 
-            this.VColorLbl.AutoSize = true;
-            this.VColorLbl.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VColorLbl.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.VColorLbl.Location = new System.Drawing.Point(417, 230);
-            this.VColorLbl.Name = "VColorLbl";
-            this.VColorLbl.Size = new System.Drawing.Size(65, 23);
-            this.VColorLbl.TabIndex = 50;
-            this.VColorLbl.Text = "Color";
-            // 
-            // VMileageLbl
-            // 
-            this.VMileageLbl.AutoSize = true;
-            this.VMileageLbl.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VMileageLbl.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.VMileageLbl.Location = new System.Drawing.Point(157, 230);
-            this.VMileageLbl.Name = "VMileageLbl";
-            this.VMileageLbl.Size = new System.Drawing.Size(87, 23);
-            this.VMileageLbl.TabIndex = 51;
-            this.VMileageLbl.Text = "Mileage";
-            // 
-            // VBookedCb
-            // 
-            this.VBookedCb.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VBookedCb.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.VBookedCb.FormattingEnabled = true;
-            this.VBookedCb.Items.AddRange(new object[] {
-            "Yes",
-            "No"});
-            this.VBookedCb.Location = new System.Drawing.Point(680, 254);
-            this.VBookedCb.Name = "VBookedCb";
-            this.VBookedCb.Size = new System.Drawing.Size(163, 31);
-            this.VBookedCb.TabIndex = 52;
-            this.VBookedCb.Text = "Booked";
-            // 
-            // DeleteBtn
-            // 
-            this.DeleteBtn.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.DeleteBtn.ForeColor = System.Drawing.Color.Cyan;
-            this.DeleteBtn.Location = new System.Drawing.Point(670, 345);
-            this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(134, 58);
-            this.DeleteBtn.TabIndex = 55;
-            this.DeleteBtn.Text = "DELETE";
-            this.DeleteBtn.UseVisualStyleBackColor = false;
-            // 
-            // EditBtn
-            // 
-            this.EditBtn.BackColor = System.Drawing.Color.DarkRed;
-            this.EditBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditBtn.ForeColor = System.Drawing.Color.Violet;
-            this.EditBtn.Location = new System.Drawing.Point(407, 345);
-            this.EditBtn.Name = "EditBtn";
-            this.EditBtn.Size = new System.Drawing.Size(134, 58);
-            this.EditBtn.TabIndex = 54;
-            this.EditBtn.Text = "EDIT";
-            this.EditBtn.UseVisualStyleBackColor = false;
-            // 
-            // SaveBtn
-            // 
-            this.SaveBtn.BackColor = System.Drawing.Color.Gold;
-            this.SaveBtn.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveBtn.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.SaveBtn.Location = new System.Drawing.Point(142, 345);
-            this.SaveBtn.Name = "SaveBtn";
-            this.SaveBtn.Size = new System.Drawing.Size(134, 58);
-            this.SaveBtn.TabIndex = 53;
-            this.SaveBtn.Text = "SAVE";
-            this.SaveBtn.UseVisualStyleBackColor = false;
-            // 
-            // VehicleDGV
-            // 
-            this.VehicleDGV.BackgroundColor = System.Drawing.Color.White;
-            this.VehicleDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.VehicleDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.VehicleDGV.Location = new System.Drawing.Point(3, 439);
-            this.VehicleDGV.Name = "VehicleDGV";
-            this.VehicleDGV.Size = new System.Drawing.Size(1060, 484);
-            this.VehicleDGV.TabIndex = 56;
             // 
             // RightCrnrExitPicBx
             // 
@@ -521,6 +521,7 @@
             this.Text = "Vehicles";
             this.VehiclesPnl.ResumeLayout(false);
             this.VehiclesPnl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.VehicleDGV)).EndInit();
             this.LogoPnl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DashboardPicBx)).EndInit();
@@ -532,7 +533,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ExitPicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserPicBx)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BookingPicBx)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.VehicleDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RightCrnrExitPicBx)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
